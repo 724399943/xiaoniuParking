@@ -1,0 +1,33 @@
+/**app.wxss**/
+page{background-color:#efefef;}
+.v-mi{display: box; display: -webkit-box; -webkit-box-pack:center; -webkit-box-align:center;}
+.inline-v{ display: inline;}
+.border{ height: 1px;background: #ddd; display: block; width: 100%;}
+.l-border{ position: absolute; left: 0px; top: 0; width: 1px; background: #ddd; height: 100%;}
+/*弹窗底色*/
+
+.drawer_container {
+  z-index:22;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*R：红色值 G：绿色值 B：蓝色值 (正整数|百分数) A：透明度(取值0~1之间)*/
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*弹窗*/
+
+.drawer_box {
+  width: 650rpx;
+  position: absolute;
+  top: 33%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 50rpx 0rpx 50rpx;
+  padding-bottom: 50rpx;
+  border-radius: 20rpx;
+}
+.ad_popError{ background: #ff4f4f; color: #fff; height: 80rpx; line-height: 80rpx; font-size: 32rpx; text-align: center;  position: absolute; left: 0; top: 0; width: 100%; z-index:3;}
