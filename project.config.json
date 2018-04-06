@@ -1,0 +1,183 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wxbc817c30a44e3b9b",
+	"projectname": "%E5%85%B1%E4%BA%AB%E8%BD%A6%E4%BD%8D",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "忘记密码",
+					"pathName": "pages/resetPassword/resetPassword",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "协议",
+					"pathName": "pages/agreement/agreement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户中心",
+					"pathName": "pages/userInfo/userInfo",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "修改姓名",
+					"pathName": "pages/editNickname/editNickname",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "个人信息",
+					"pathName": "pages/userInfo/userInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户中心",
+					"pathName": "pages/personalCenter/personalCenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息中心",
+					"pathName": "pages/messageCenter/messageCenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/myWallet/myWallet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "停车记录",
+					"pathName": "pages/parkingRecord/parkingRecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "消息详情",
+					"pathName": "pages/messageDetail/messageDetail",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "充值页面",
+					"pathName": "pages/recharge/recharge",
+					"query": ""
+				},
+				{
+					"id": 15,
+					"name": "提现",
+					"pathName": "pages/withdraw/withdraw",
+					"query": ""
+				},
+				{
+					"id": 16,
+					"name": "我的钱包",
+					"pathName": "pages/myWallet/myWallet",
+					"query": ""
+				},
+				{
+					"id": 17,
+					"name": "输入编码",
+					"pathName": "pages/inputCoding/inputCoding",
+					"query": ""
+				},
+				{
+					"id": 18,
+					"name": "车位详情",
+					"pathName": "pages/parkingDetails/parkingDetails",
+					"query": ""
+				},
+				{
+					"id": 19,
+					"name": "订单详情",
+					"pathName": "pages/orderEnd/orderEnd",
+					"query": ""
+				},
+				{
+					"id": 20,
+					"name": "订单进行中",
+					"pathName": "pages/orderInProgress/orderInProgress",
+					"query": ""
+				},
+				{
+					"id": 21,
+					"name": "客服中心",
+					"pathName": "pages/customerServiceCenter/customerServiceCenter",
+					"query": ""
+				},
+				{
+					"id": 22,
+					"name": "举报违停",
+					"pathName": "pages/illegalReporting/illegalReporting",
+					"query": ""
+				},
+				{
+					"id": 23,
+					"name": "开不了锁",
+					"pathName": "pages/openTheLock/openTheLock",
+					"query": ""
+				},
+				{
+					"id": 24,
+					"name": "发现故障",
+					"pathName": "pages/findFault/findFault",
+					"query": ""
+				}
+			]
+		}
+	}
+}
