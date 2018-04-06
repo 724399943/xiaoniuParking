@@ -1,0 +1,37 @@
+<!--pages/orderEnd/orderEnd.wxml-->
+<view class='endmain'>
+    <view class='endtop'>
+        <view class='vt'>需支付</view>
+        <view class='pice'>￥<text>8.98</text></view>
+        <view class='vt'>2时6分</view>
+        <view class='vt'>12-12 12:12~12-12 12:12</view>
+    </view>
+    <view class='rowmain'>
+        <view class='erow'>车锁ID<text>13486786</text></view>
+        <view class='erow'>联系电话<text>1328878657</text></view>
+    </view>
+    <view class='wmode'>
+        <view class='title'>支付方式</view>
+        <radio-group>
+          <view class='wrow'>
+              <view class='name'>
+                  <image mode='widthFix' src='../images/wechatPay.png' class='pic'></image>
+                  <text class='tit'>微信支付</text>
+              </view> 
+              <label class='sel'>
+                <radio color='#f05b48' name="pay"></radio>
+              </label>
+          </view>
+          <view class='wrow'>
+              <view class='name'>
+                  <image mode='widthFix' src='../images/wallect-icon.png' class='pic'></image>
+                  <text class='tit'>我的钱包(￥0.00)</text>
+              </view> 
+              <label class='sel'>
+                <radio color='#f05b48' name="pay"></radio>
+              </label>
+          </view>
+        </radio-group>
+    </view>
+</view> 
+<view class='topay'>支付</view>

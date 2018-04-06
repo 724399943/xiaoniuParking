@@ -1,0 +1,45 @@
+<!--pages/findFault/findFault.wxml-->
+<view class='main'>
+    <view class='otlTop'>
+        <image mode='widthFix' src='../images/scan-icon.png' class='ico'></image>
+         <input placeholder='拍摄车辆二维码或手动输入编码' class='otlinput'></input> 
+        <!-- <view class='otlnum'>
+            <view>12345678</view>
+            <view class='rescan'>重新扫描</view>
+        </view> -->
+    </view>
+    <view class='fault'>
+        <checkbox-group>
+          <view class='glist'>  
+              <view>
+                <icon type='success' size="20" color='#cccccc' class='checkbox' bindtap='bindCheckbox'></icon>
+                <text class='txt'>故障1</text>
+              </view>
+              <view>
+                <icon type='success' size="20" color='#cccccc' class='checkbox' bindtap='bindCheckbox'></icon>
+                <text class='txt'>故障2</text>
+              </view>
+              <view>
+                <icon type='success' size="20" color='#cccccc' class='checkbox' bindtap='bindCheckbox'></icon>
+                <text class='txt'>故障3</text>
+              </view>
+          </view>
+        </checkbox-group> 
+    </view>
+    <view class='wchange'>
+        <view class='wec'>
+            <image mode='widthFix' src='../images/add-pic.png' class='add'></image>
+            <view class='tips'>
+                <view>拍摄真实故障照片，</view>
+                <view>以帮助我们解决问题</view>
+            </view> 
+        </view>        
+    </view>
+    <view class='retext'>
+        <view class='inbox'>
+            <textarea maxlength='140' placeholder='问题补充描述'></textarea>
+        </view> 
+        <view class='retips'>还可输入140字</view>
+    </view> 
+</view>
+<view class='commit'>提交</view>

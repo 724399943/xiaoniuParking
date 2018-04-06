@@ -1,0 +1,28 @@
+<!--pages/openTheLock/openTheLock.wxml-->
+<view class='main'>
+    <view class='otlTop'>
+        <image mode='widthFix' src='../images/scan-icon.png' class='ico'></image>
+         <input placeholder='拍摄车辆二维码或手动输入编码' class='otlinput'></input> 
+        <!-- <view class='otlnum'>
+            <view>12345678</view>
+            <view class='rescan'>重新扫描</view>
+        </view> -->
+    </view>
+    <view class='otlproblem'>
+        <view class='prorow'>
+            <view class='title'>1、开不了锁怎么办</view>
+            <view>解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万</view>
+        </view>
+        <view class='prorow'>
+            <view class='title'>1、开不了锁怎么办</view>
+            <view>解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万解决方法千千万万</view>
+        </view>
+    </view>
+    <view class='retext'>
+        <view class='inbox'>
+            <textarea maxlength='140' placeholder='问题补充描述'></textarea>
+        </view> 
+        <view class='retips'>还可输入140字</view>
+    </view> 
+</view>
+<view class='commit'>提交</view>

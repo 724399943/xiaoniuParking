@@ -1,0 +1,7 @@
+/* pages/messageCenter/messageCenter.wxss */
+.msgc{padding:0 10px;font-size:14px;}
+.msg-row{background-color:#fff;padding:10px 15px;margin-top:10px;border-radius:3px;}
+.msg-row .title{font-size:16px;font-weight:bold;}
+.msg-row .cont{color:#808080;margin:8px 0;}
+.msg-row .cont view{line-height:20px;}
+.msg-row .time{font-size:12px;color:#cccccc;}

@@ -1,0 +1,17 @@
+/* pages/openTheLock/openTheLock.wxss */
+page{background-color:#fff;width:94%;margin:auto;font-size:16px;}
+.main{padding-bottom:55px;}
+.otlTop{background-color:#efefef;padding:10px 10px 10px 50px;margin:10px 0;border-radius:3px;height:30px;line-height:30px;position:relative;}
+.otlTop .ico{width:30px;position:absolute;top:11px;left:10px;}
+.otlTop .otlinput{font-size:14px;color:#808080;height:30px;line-height:30px;width:100%;}
+.otlTop .otlnum{font-size:14px;line-height:17px;}
+.otlTop .otlnum .rescan{color:#f05b48;font-size:12px;}
+.otlproblem {padding:10px 0;}
+.otlproblem .prorow{font-size:14px;color:#808080;line-height:20px;margin-bottom:15px;}
+.otlproblem .prorow .title{font-size:16px;color:#191d21;line-height:35px;}
+.retext{font-size:14px;color:#808080;}
+.retext .inbox{background-color:#efefef;padding:15px;border-radius:3px;}
+.retext .inbox textarea{width:100%;}
+.retext .retips{text-align:right;font-size:12px;line-height:25px;}
+.commit{width:100%;height:45px;line-height:45px;text-align:center;position:fixed;bottom:0;left:0;color:#fff;background-color:#cccccc;}
+.commit.on{background-color:#f05b48;}

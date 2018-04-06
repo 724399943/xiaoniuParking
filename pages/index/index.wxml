@@ -1,0 +1,251 @@
+<!--index.wxml-->
+<view class="map-box">
+  <map id="myMap" show-location scale='12' bindmarkertap="openDetaiFun" class='mapclass' controls='{{controls}}' markers="{{markers}}" longitude="{{longitude}}" latitude="{{latitude}}" >
+    <cover-view class="map-header">
+      <cover-view class='btn'>管理车位</cover-view>
+      <cover-view class='btn'>分享车位</cover-view>
+    </cover-view>
+    <cover-view class="section-search">
+      <cover-image src='../images/search.png' class='search-box' bindtap="searchFun"></cover-image>
+      <cover-view class="txt" bindtap="searchFun">目的地查找</cover-view>
+      <cover-view class="section-select" bindtap="choseFun">
+        <cover-view class="picker">
+          <cover-view class='t'>{{timetxt}}</cover-view>
+          <cover-image src='../images/sico.png' class="ico" />
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='user-box' bindtap='touserFun'>
+      <cover-image class="img" src='../images/usercen.png' mode="widthFix"></cover-image>
+    </cover-view>
+    <cover-view class='ding-box' bindtap="rebackFun">
+      <cover-image class="img" src='../images/ding.png' mode="widthFix"></cover-image>
+    </cover-view>
+    <cover-view class='p-box'>
+      <cover-image class="img" src='../images/p.png' mode="widthFix"></cover-image>
+    </cover-view>
+    <cover-view class='kefu-box'>
+      <cover-image class="img" src='../images/kefu.png' mode="widthFix"></cover-image>
+    </cover-view>
+    <cover-view class='sao-box' bindtap="saoFun">
+      <cover-image class="img" src="../images/sao.png" mode="widthFix"></cover-image>
+      <cover-view class='sao'>扫码开锁</cover-view>
+    </cover-view>
+    <cover-view  wx:if="{{state}}">
+      <cover-view class="close-pop-mb" bindtap="closePopFun"></cover-view>
+      <!-- 共享时段 -->
+      <cover-view class="pop-msg-box" wx:if="{{state == 1}}">
+        <cover-view class="tit">
+          <cover-image class="ico" src="../images/adrico.png"/>
+          {{detail.address}}
+        </cover-view>
+        <cover-view class='pop-main'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.sharePrice}}</cover-view>
+            <cover-view  class="t">/时</cover-view>
+            <cover-view class='txt'>价格</cover-view>
+          </cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.maxPrice}}</cover-view>
+            <cover-view class="t">/天</cover-view>
+            <cover-view class='txt'>封顶</cover-view>
+          </cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.distance}}</cover-view>
+            <cover-view class="t">km</cover-view>
+            <cover-view class='txt'>距离</cover-view>
+          </cover-view>
+        </cover-view>
+        <!-- <cover-view class='pop-ps'>{{detail.}}</cover-view> -->
+        <cover-view class='pop-compant'>共享时间：{{detail.shareStart}}-{{detail.shareEnd}}</cover-view>
+        <cover-view class='pop-btn'>
+          <cover-view class="btn" bindtap="yuyueFun">预约停车</cover-view>
+          <cover-view class="btn">导航</cover-view>
+        </cover-view>
+      </cover-view>
+      <!-- 非共享 -->
+      <cover-view class="pop-msg-box" wx:if="{{state == 2}}" id="Jshowdown">
+        <cover-view class="tit">
+          <cover-image class="ico" src="../images/adrico.png"/>
+          {{detail.address}}
+        </cover-view>
+        <cover-view class='pop-main'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.noSharePrice}}</cover-view>
+            <cover-view  class="t">/时</cover-view>
+            <cover-view class='txt'>价格</cover-view>
+          </cover-view>
+
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.distance}}</cover-view>
+            <cover-view class="t">km</cover-view>
+            <cover-view class='txt'>距离</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class='pop-ps'>在此消费免费停车</cover-view>
+        <cover-view class='pop-compant'>归属公司：广州酷顶网络</cover-view>
+        <cover-view class='pop-btn'>
+          <cover-view class="border"></cover-view>
+          <cover-view class="btn" bindtap="yuyueFun">预约停车</cover-view>
+          <cover-view class="btn" >导航</cover-view>
+        </cover-view>
+      </cover-view>
+      <!-- 共享全天候 -->
+      <cover-view class="pop-msg-box" wx:if="{{state == 3}}">
+        <cover-view class="tit">
+          <cover-image class="ico" src="../images/adrico.png"/>
+          {{detail.address}}
+        </cover-view>
+        <cover-view class='pop-main'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.sharePrice}}</cover-view>
+            <cover-view  class="t">/时</cover-view>
+            <cover-view class='txt'>价格</cover-view>
+          </cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.maxPrice}}</cover-view>
+            <cover-view class="t">/天</cover-view>
+            <cover-view class='txt'>封顶</cover-view>
+          </cover-view>
+          <cover-view class='item'>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{detail.distance}}</cover-view>
+            <cover-view class="t">km</cover-view>
+            <cover-view class='txt'>距离</cover-view>
+          </cover-view>
+        </cover-view>
+        <!-- <cover-view class='pop-ps'>在此消费免费停车</cover-view> -->
+        <cover-view class='pop-compant'>共享时间：{{detail.shareStart}}-{{detail.shareEnd}}</cover-view>
+        <cover-view class='pop-btn'>
+          <cover-view class="btn">预约停车</cover-view>
+          <cover-view class="btn">导航</cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>  
+    <!-- 预约弹窗 -->
+    <cover-view class="drawer_container" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+      <cover-view class='pop-main-t'>
+        <cover-view class='tit'>
+          <cover-view class='inline-v'>该车位有</cover-view>
+          <cover-view class='inline-v num'>{{detail.noshareReservationTime}}</cover-view >
+          <cover-view class='inline-v'>分钟的保留时间</cover-view>
+          <cover-view>是否继续预约?</cover-view>
+          <cover-view class='tips'>
+            <cover-view class='txt'>预约时间到后计费保留车位</cover-view>
+            <cover-image mode='widthFix' src='../images/checked-icon.png' class='check' data-state='2' wx:if="{{checked == 1}}" bindtap="changeico"></cover-image>
+            <cover-image mode='widthFix' src='../images/checkbox-icon.png' class='check' data-state='1' wx:else bindtap="changeico"></cover-image>
+          </cover-view>
+        </cover-view>
+        <cover-view class='btn-box'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='btn' bindtap="cancelyy">取消</cover-view>
+          <cover-view class='btn' bindtap="commityuyue">
+            <cover-view class='l-border'></cover-view>
+            确定
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!-- 订单进行中 -->
+    <cover-view class="drawer_container" animation="{{animationData}}" wx:if="{{hasorder}}">
+      <cover-view class='pop-main-t'>
+        <cover-view class='tit'>
+          <cover-view class='inline-v'>检测到您有1张订单进行中...</cover-view>
+        </cover-view>
+        <cover-view class='btn-box ordering'>
+          <cover-view class="border"></cover-view>
+          <!-- <cover-view class='btn' bindtap="cancelyy">取消</cover-view> -->
+          <cover-view class='btn comein' bindtap="goingFun">
+            进入
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!-- 预约中的订单 -->
+    <cover-view class="pop-msg-box" wx:if="{{showorderDetail}}" id="Jshowdown">
+        <cover-view class="tit">
+          <cover-image class="ico" src="../images/adrico.png"/>
+          {{orderDetail.address}}
+        </cover-view>
+        <cover-view class='pop-main'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='item'>
+            <cover-view class='num'>{{orderDetail.lockNum}}</cover-view>
+            <cover-view class='txt'>车锁编码</cover-view>
+          </cover-view>
+
+          <cover-view class='item' wx:if="{{orderDetail.state <3}}">
+            <!-- <cover-view class="t">¥</cover-view> -->
+            <cover-view class='num'>{{orderDetail.time}}</cover-view>
+            <cover-view class="t">分</cover-view>
+            <cover-view class='txt'>保留时间</cover-view>
+          </cover-view>
+          <cover-view class='item' wx:else>
+            <cover-view class="t">¥</cover-view>
+            <cover-view class='num'>{{orderDetail.amout}}</cover-view>
+            <cover-view class="t">分</cover-view>
+            <cover-view class='txt'>超时({{orderDetail.time}}分)</cover-view>
+          </cover-view>
+
+        </cover-view>
+        <cover-view class='pop-ps'>{{orderDetail.showInfo}}</cover-view>
+        <cover-view class='pop-compant'>归属公司：广州酷顶网络</cover-view>
+        <cover-view class='pop-btn'>
+          <cover-view class="border"></cover-view>
+          <cover-view class="btn" bindtap="cancelorder">取消预约</cover-view>
+          <cover-view class="btn" data-json="{{orderDetail}}" bindtap="daohang">导航</cover-view>
+        </cover-view>
+    </cover-view>
+
+    <!-- 取消预约 -->
+    <cover-view class="drawer_container" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+      <cover-view class='pop-main-t'>
+        <cover-view class='tit' wx:if="{{}}">
+          <cover-view class='inline-v'>该车位有</cover-view>
+          <cover-view class='inline-v num'>{{detail.noshareReservationTime}}</cover-view >
+          <cover-view class='inline-v'>分钟的保留时间</cover-view>
+          <cover-view>是否继续预约?</cover-view>
+          <cover-view class='tips'>
+            <cover-view class='txt'>预约时间到后计费保留车位</cover-view>
+            <cover-image mode='widthFix' src='../images/checked-icon.png' class='check' data-state='2' wx:if="{{checked == 1}}" bindtap="changeico"></cover-image>
+            <cover-image mode='widthFix' src='../images/checkbox-icon.png' class='check' data-state='1' wx:else bindtap="changeico"></cover-image>
+          </cover-view>
+        </cover-view>
+        <cover-view class='tit'>
+          <cover-view class='inline-v'>该车位有</cover-view>
+          <cover-view class='inline-v num'>{{detail.noshareReservationTime}}</cover-view >
+          <cover-view class='inline-v'>分钟的保留时间</cover-view>
+          <cover-view>是否继续预约?</cover-view>
+          <cover-view class='tips'>
+            <cover-view class='txt'>预约时间到后计费保留车位</cover-view>
+            <cover-image mode='widthFix' src='../images/checked-icon.png' class='check' data-state='2' wx:if="{{checked == 1}}" bindtap="changeico"></cover-image>
+            <cover-image mode='widthFix' src='../images/checkbox-icon.png' class='check' data-state='1' wx:else bindtap="changeico"></cover-image>
+          </cover-view>
+        </cover-view>
+        <cover-view class='btn-box'>
+          <cover-view class="border"></cover-view>
+          <cover-view class='btn' bindtap="cancelyy">取消</cover-view>
+          <cover-view class='btn' bindtap="commityuyue">
+            <cover-view class='l-border'></cover-view>
+            确定
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+
+
+  </map>
+
+</view>

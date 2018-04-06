@@ -1,0 +1,64 @@
+<!--pages/search/search.wxml-->
+<view>
+    <view class='search-box'>
+        <view class='smain'>
+            <image mode="widthFix" src='../images/search.png' class='ico'></image>
+            <input placeholder='请输入搜索地址' type="text" bindinput="bindKeyInput"></input>
+        </view>
+    </view>
+     <view class='address'>
+        <view class='posi'>我的位置<text>{{address}}</text></view>
+        <view class='common half'>
+          <view class='half-cont bo'>
+            <view class='comrow'>
+                <navigator url='../commonAddress/commonAddress'>
+                  <image mode='widthFix' src='../images/star-icon.png' class='ico'></image>                          
+                  <view class='comtit'>
+                      <view class='name'>常用地址</view>
+                      <view>点击设置常用地址</view>
+                  </view>
+                </navigator>
+            </view>
+          </view> 
+          <view class='half-cont'>
+            <view class='comrow'>
+                <image mode='widthFix' src='../images/star-red-icon.png' class='ico'></image>                          
+                <view class='comtit'>
+                    <view class='name'>金晖苑</view>
+                    <view>棠下市场北村一巷10号</view>
+                </view>
+            </view>
+          </view>          
+        </view>
+        <view class='common'>
+            <view class='comrow' wx:for="{{list}}" data-item="{{index}}" bindtap="goto">
+                <image mode='widthFix' src="../images/history-icon.png" class='ico'></image>
+                <view class='comtit'>
+                    <view class='name'>{{item.title}}</view>
+                    <view>{{item.address}}</view>
+                </view>
+            </view>
+
+        </view>
+        <view class='clearbtn'>清空历史记录</view>
+    </view> 
+    <!-- result -->
+    <!-- <view class='search-result'>
+        <view class='common'>
+            <view class='comrow'>
+                <image mode='widthFix' src="../images/adrico.png" class='ico'></image>
+                <view class='comtit'>
+                    <view class='name'>金晖苑</view>
+                    <view>棠下市场北村一巷10号</view>
+                </view>
+            </view>
+            <view class='comrow'>
+                <image mode='widthFix' src="../images/adrico.png" class='ico'></image>
+                <view class='comtit'>
+                    <view class='name'>金晖苑</view>
+                    <view>棠下市场北村一巷10号</view>
+                </view>
+            </view>
+        </view>
+    </view> -->
+</view>

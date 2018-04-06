@@ -1,0 +1,10 @@
+<!--pages/messageCenter/messageCenter.wxml-->
+<view class='msgc'>
+    <view class='msg-row' wx:for="{{list}}">
+        <view class='title'>{{item.title}}</view>
+        <view class='cont'>
+            <view>{{item.content}}</view>
+        </view>
+        <view class='time'>{{item.createDate}}</view>
+    </view>
+</view>

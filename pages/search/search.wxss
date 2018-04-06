@@ -1,0 +1,17 @@
+/* pages/search/search.wxss */
+.search-box{padding:10px;background-color:#fff;border-bottom:1px solid #eee;}
+.search-box .smain{background-color:#efefef;border-radius:3px;height:30px;line-height:30px;padding:0 15px;position:relative;}
+.search-box .smain .ico{width:17px;position:absolute;top:7px;left:15px;}
+.search-box .smain input{height:30px;line-height:30px;font-size:14px;padding-left:30px;}
+.address{font-size:14px;}
+.address .posi{padding:0 10px;line-height:40px;}
+.address .posi text{margin-left:15px;color:#808080;font-size:13px;}
+.common.half{display:-webkit-box;}
+.common.half .half-cont{width:55%;}
+.common.half .half-cont.bo{width:45%;border-right:1px solid #eee;margin-left:-1px;}
+.common .comrow{background-color:#fff;font-size:14px;padding:10px;position:relative;border-bottom:1px solid #eee;padding-left:35px;}
+.comrow .ico{width:17px;position:absolute;top:50%;left:10px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);}
+.comrow .comtit{font-size:12px;color:#808080;}
+.comrow .comtit .name{font-size:16px;color:#191d21;}
+.comrow .comtit view{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.clearbtn{line-height:40px;text-align:center;background-color:#f7f7f7;color:#808080;}

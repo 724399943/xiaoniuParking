@@ -1,0 +1,5 @@
+/* pages/commonAddress/commonAddress.wxss */
+.main{background-color:#fff;}
+.add-row{padding:10px 30px 10px 10px;font-size:16px;color:#191d21;position:relative;border-bottom:1px solid #ddd;}
+.add-row .add{font-size:12px;color:#808080;}
+.add-row .icon{width:8px;height:12px;position:absolute;top:50%;right:10px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);}

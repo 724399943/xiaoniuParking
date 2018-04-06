@@ -1,0 +1,15 @@
+/* pages/orderEnd/orderEnd.wxss */
+.endmain{padding-bottom:55px;}
+.endtop{font-size:14px;background-color:#fff;padding:20px 0;text-align:center;}
+.endtop .vt{color:#808080;}
+.endtop .pice text{color:#f05b48;font-size:35px;font-weight:bold;line-height:40px;}
+.rowmain{font-size:16px;background-color:#fff;}
+.rowmain .erow{line-height:40px;padding:0 10px;border-top:1px solid #eee;overflow:hidden;}
+.rowmain .erow text{float:right;}
+.topay{width:100%;line-height:45px;text-align:center;background-color:#f05b48;color:#fff;font-size:16px;position:fixed;bottom:0;left:0;}
+.wmode{padding:0 10px;background-color:#fff;font-size:14px;margin-top:15px;}
+.wmode .title{font-size:16px;padding-top:15px;}
+.wrow{height:40px;line-height:40px;padding:10px 0;border-bottom:1px solid #eee;position:relative;}
+.wrow .pic{width:33px;display:inline-block;vertical-align:middle;}
+.wrow .tit{display:inline-block;vertical-align:middle;margin-left:10px;}
+.wrow .sel{position:absolute;top:11px;right:0;}

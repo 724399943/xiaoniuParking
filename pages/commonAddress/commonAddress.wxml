@@ -1,0 +1,13 @@
+<!--pages/commonAddress/commonAddress.wxml-->
+<view class='main'>
+    <view class='add-row'>
+        <view>{{userInfo.addressName1}}</view>
+        <view class='add'>{{userInfo.address1}}</view>
+        <image src='../images/arrow-right.png' class='icon'></image>
+    </view>
+    <view class='add-row'>
+        <view>{{userInfo.addressName2}}</view>
+        <view class='add'>{{userInfo.address2}}</view>
+        <image src='../images/arrow-right.png' class='icon'></image>
+    </view>
+</view>

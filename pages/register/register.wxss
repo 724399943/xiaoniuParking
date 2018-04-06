@@ -1,0 +1,20 @@
+/* pages/register/register.wxss */
+page{background-color:#ffffff;}
+.in-main{width:93%;margin:auto;padding-top:20%;}
+.lin-box{background:#efefef;height:90rpx;line-height:90rpx;border-radius:6rpx;font-size:32rpx;margin-top:30rpx;padding:0 3%;}
+.lin-box::after{content:'';display:block;clear:both;}
+.lin-box .st{float:left;width:160rpx;}
+.lin-box .txt{float:left;display:block;height:90rpx;}
+.login-btn{margin-top:90rpx;font-size:32rpx;background-color:#cccccc;color:#ffffff;line-height:90rpx;text-align:center;border-radius:3px;}
+.login-btn.on{background-color:#ff4f4f;}
+.code{height:90rpx;line-height:90rpx;margin-top:30rpx;}
+.code::after{content:"";display:block;clear:both;}
+.code .code-box{float:left;width:61%;background-color:#efefef;font-size:32rpx;padding:0 3%;border-radius:6rpx;}
+.code .code-box .tt{width:160rpx;}
+.code .code-box .txt{height:90rpx;width:190rpx;}
+.code .code-box .lf{float:left;}
+.code .getCode{float:left;width:30%;font-size:32rpx;text-align:center;color:#ffffff;background-color:#ff4f4f;border-radius:6rpx;margin-left:3%;padding:0;line-height:90rpx;}
+.code .getCode.on{background-color:#cccccc;}
+.button-hover {background-color: #ff4f4f;line-height:90rpx;}
+.tips{text-align:center;font-size:24rpx;line-height:80rpx;color:#808080;}
+.tips .rule{color:#ff4f4f;display:inline-block;}

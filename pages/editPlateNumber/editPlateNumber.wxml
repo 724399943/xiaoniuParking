@@ -1,0 +1,7 @@
+<!--pages/editPlateNumber/editPlateNumber.wxml-->
+<view class='edmain'>
+    <view class='editbox'>
+        <input type='text' value='{{licensePlate}}' bindinput="chageName"></input>
+    </view>
+    <view class='btn' bindtap="commitFun">保存</view>
+</view>

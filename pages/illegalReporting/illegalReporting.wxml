@@ -1,0 +1,14 @@
+<!--pages/illegalReporting/illegalReporting.wxml-->
+<view class='report'>
+    <view class='tit'>
+        <view>如您有其他问题，请告诉我们，</view>
+        <view>我们会尽快处理</view>
+    </view>
+    <view class='retext'>
+        <view class='inbox'>
+            <textarea maxlength='140' placeholder='问题描述'></textarea>
+        </view> 
+        <view class='retips'>还可输入140字</view>
+    </view> 
+</view>
+<view class='commit'>提交</view>

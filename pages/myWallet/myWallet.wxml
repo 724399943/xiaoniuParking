@@ -1,0 +1,17 @@
+<!--pages/myWallet/myWallet.wxml-->
+<view class='main'>
+    <view class='mwnav'>
+        <navigator class='snav' url='../specifi/specifi'>明细</navigator>
+    </view> 
+    <view class='mwmoney'>
+        <view class='mon'>
+          <text>￥</text>
+          <text class='money'>{{coin.amount}}</text>
+        </view>
+        <view class='tit'>我的余额</view>
+    </view>
+    <view class='mwbtn'>
+        <view class='regbtn'><navigator url='../recharge/recharge'>充值</navigator></view>
+        <view class='wibtn'><navigator url='../withdraw/withdraw'>提现</navigator></view>
+    </view> 
+</view>

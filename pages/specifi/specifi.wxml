@@ -1,0 +1,12 @@
+<!--pages/specifi/specifi.wxml-->
+<view class='spmain'>
+    <view class='sprow'>
+        <view class='stxt'>
+            <view class='vt' wx:if="{{list.bizType == 0}}">充值成功</view>
+            <view class='vt' wx:if="{{list.bizType == 1}}">提现</view>
+            <view class='vt' wx:if="{{list.bizType == 2}}">支付</view>
+            <view class='time'>{{list.createTime}}</view>
+        </view> 
+        <view class='money'>{{list.incr}}</view>
+    </view>
+</view> 

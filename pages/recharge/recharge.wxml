@@ -1,0 +1,25 @@
+<!--pages/recharge/recharge.wxml-->
+ <view>
+    <view class='recont'>
+        <view class='title'>充值金额</view>
+        <view class='choose'>
+            <view class='price'>
+                <view class='num lf on'>100元</view>
+                <view class='num lf'>50元</view>
+                <view class='num lf'>20元</view>
+                <view class='num lf'>其他</view>
+            </view> 
+            <view class='oinput'>
+                <input placeholder='请输入大于100的金额'></input>
+            </view> 
+        </view> 
+    </view>
+    <view class='topay'>支付</view>
+</view>  
+<!-- success -->
+<!-- <view>
+    <view class='sucess'>
+        <icon type="success" size="60" color="#f05b48"></icon>
+        <view>支付成功</view>
+    </view>
+</view>  -->

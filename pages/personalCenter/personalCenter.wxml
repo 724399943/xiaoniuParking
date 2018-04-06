@@ -1,0 +1,27 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view>
+  <view class='content'>
+    <view class='centop'>
+      <navigator url='../userInfo/userInfo'>
+        <view class='headBox'>
+            <image mode='widthFix' src='{{avatar}}' class='pic'></image>
+        </view>
+        <view class='nickname'>{{nickName}}</view>
+      </navigator>
+    </view>
+    <view class='navcont'>
+        <navigator url='../myWallet/myWallet' class='part'><image mode='widthFix' src='../images/wallet-ico.png' class='ico'></image><text class='name'>我的钱包</text></navigator>
+        <navigator url='../parkingRecord/parkingRecord' class='part'><image mode='widthFix' src='../images/record-ico.png' class='ico'></image><text class='name'>停车记录</text></navigator>
+        <navigator url='../voucher/voucher' class='part'><image mode='widthFix' src='../images/voucher-ico.png' class='ico'></image><text class='name'>出门凭证</text></navigator>
+    </view>
+    <view class='navlist'>
+        <navigator url='../messageCenter/messageCenter' class='navrow'>消息中心<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></navigator>
+        <navigator url='../editPassword/editPassword' class='navrow'>修改密码<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></navigator>
+        <navigator url='../guideToUse/guideToUse' class='navrow'>使用指南<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></navigator>
+        <navigator url='../feedBack/feedBack' class='navrow'>反馈建议<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></navigator>
+        <view class='navrow'>好友分享<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></view>
+        <navigator url='../aboutUs/aboutUs' class='navrow'>关于小牛<image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image></navigator>
+    </view>
+    <view class='outbtn' bindtap="logout">退出登录</view> 
+  </view>  
+</view> 

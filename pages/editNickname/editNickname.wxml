@@ -1,0 +1,8 @@
+<!--pages/editNickname/editNickname.wxml-->
+<view class='edmain'>
+    <view class='editbox'>
+        <text>昵称</text>
+        <input type='text' value="{{nickName}}" bindinput="chageName"></input>
+    </view>
+    <view class='btn' bindtap="commitFun">保存</view>
+</view>

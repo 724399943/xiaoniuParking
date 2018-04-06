@@ -1,0 +1,27 @@
+<!--pages/register/register.wxml-->
+<view class='in-main'>
+  <form>
+    <view class="lin-box">
+        <text class='st'>手机号</text>
+        <input class='txt' type="number" placeholder='请输入手机号码' bindinput="listenerPhone"></input>
+    </view>
+    <view class='code'>
+        <view class='code-box'>
+            <text class='tt lf'>验证码</text>
+            <input type='text' placeholder='请输入验证码' class='txt lf' bindinput="listenerCode"></input>
+        </view> 
+        <view class='getCode {{hasgetCode}}' bindtap="getCode">{{hasgetCode==''?'获取验证码':'已获取'}}</view>
+    </view>
+    <view class="lin-box">
+        <text class='st'>设置密码</text>
+        <input class='txt' type="password" placeholder='6-16位为字母，数字' bindinput="listenerPassword"></input>
+    </view>
+    <view class="lin-box">
+        <text class='st'>昵称</text>
+        <input class='txt' type="text" placeholder='选填' bindinput="listenerNickname"></input>
+    </view>   
+    <view class='login-btn' bindtap='commitFun'>注册，并立即登录</view>
+  </form>
+  <view class='tips'>点击注册，即表示您已同意<navigator url='../agreement/agreement' hover-class="none" class='rule'>《共享停车用户协议》</navigator></view>
+</view>
+<view class="ad_popError" wx:if="{{popmsg}}">{{errorMsg}}</view> 

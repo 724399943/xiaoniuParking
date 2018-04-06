@@ -1,0 +1,15 @@
+/* pages/orderInProgress/orderInProgress.wxss */
+.intop{background-color:#fff;padding:20px 0;font-size:14px;text-align:center;display:-webkit-box;}
+.intop .tpart{width:50%;}
+.intop .txt{color:#808080;line-height:25px;}
+.intop .vt text{font-size:30px;color:#f05b48;}
+.setprice{padding:15px 10px;font-size:16px;background-color:#f7f7f7;}
+.setprice .srow{overflow:hidden;line-height:25px;}
+.setprice .srow .st{float:right;font-size:14px;color:#808080;}
+.setprice .srow .st text{color:#f05b48;margin:0 3px;}
+.detcont{margin-top:15px;}
+.ptips{line-height:40px;padding:0 10px;color:#fff;font-size:16px;background-color:#f05b48;}
+.parkplace{background-color:#fff;font-size:16px;overflow:hidden;padding:10px;border-bottom:1px solid #eee;}
+.parkplace .tit{float:right;color:#808080;font-size:14px;width:55%;text-align:right;}
+.parkplace.nav{position:relative;padding-right:50px;}
+.parkplace.nav .icon{width:30px;position:absolute;top:50%;right:10px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);}

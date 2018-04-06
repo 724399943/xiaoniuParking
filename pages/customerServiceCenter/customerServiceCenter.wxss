@@ -1,0 +1,5 @@
+/* pages/customerServiceCenter/customerServiceCenter.wxss */
+.navlist{background-color:#fff;font-size:14px;}
+.navlist .navrow{padding:0 10px;height:40px;line-height:40px;border-bottom:1px solid #eee;overflow:hidden;}
+.navlist .navrow .arrow{width:7px;float:right;margin-top:14px;}
+.navlist .navrow .num{float:right;font-size:12px;color:#808080;margin-right:3%;}

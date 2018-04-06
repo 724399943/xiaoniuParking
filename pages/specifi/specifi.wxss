@@ -1,0 +1,7 @@
+/* pages/specifi/specifi.wxss */
+.spmain{width:94%;margin:auto;}
+.sprow{background-color:#fff;margin-top:15px;border-radius:3px;padding:10px 90px 10px 10px;font-size:16px;position:relative;}
+.sprow .stxt{line-height:20px;}
+.sprow .stxt .vt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sprow .stxt .time{font-size:12px;color:#808080;}
+.sprow .money{color:#f05b48;position:absolute;top:50%;right:10px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);}

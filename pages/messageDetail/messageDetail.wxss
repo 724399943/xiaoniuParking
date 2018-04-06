@@ -1,0 +1,7 @@
+/* pages/messageDetail/messageDetail.wxss */
+page{background-color:#fff;}
+.main{padding:20px 10px 0px 10px;font-size:16px;}
+.title{font-size:18px;}
+.time{font-size:12px;color:#808080;}
+.content{line-height:25px;margin-top:10px;}
+.content image{width:100%;}

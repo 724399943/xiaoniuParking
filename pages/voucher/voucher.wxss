@@ -1,0 +1,15 @@
+/* pages/voucher/voucher.wxss */
+page{background-color:#191d21;}
+.main{width:94%;margin:auto;}
+.vou-box{margin:15px 0 0 0;position:relative;color:#191d21;}
+.vou-box.on,.vou-box.on .pass .plate{color:#808080;}
+.overdue{width:55px;position:absolute;top:10px;right:8px;}
+.vou-box .bg{width:100%;}
+.vou-box .pass{position:absolute;top:15px;left:50%;width:86%;margin-left:-43%;font-size:12px;}
+.vou-box .pass .plate{font-size:20px;color:#f05b48;font-weight:bold;line-height:30px;}
+.vou-box .detail{position:absolute;top:115px;left:50%;width:84%;margin-left:-42%;color:#fff;font-size:12px;text-align:center;}
+.detail .top{display:-webkit-box;}
+.detail .top>view{width:50%;}
+.detail .top .tit{font-size:35px;font-weight:500;}
+.detail .time{margin-top:20px;}
+.tips{text-align:center;font-size:14px;color:#808080;line-height:30px;}

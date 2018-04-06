@@ -1,0 +1,36 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class='infoMain'>
+    <view class='info-row' bindtap='bindUploadHead'>
+        <text>头像</text>
+        <image mode="scaleToFill" src='{{avatar}}'  class='head'></image>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </view>
+    <navigator url='../editNickname/editNickname?nickName={{userInfo.nickName}}' class='info-row'>
+        <text>昵称</text>
+        <view class='vtit'>{{userInfo.nickName}}</view>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </navigator>
+    <picker mode="selector" bindchange="bindPickerChange" range-key="name" range="{{array}}" class='info-row'>
+        <text>性别</text>
+        <view class='vtit' wx:if="{{sex == 0}}">未设置</view>
+        <view class='vtit' wx:if="{{sex == 1}}">男</view>
+        <view class='vtit' wx:if="{{sex == 2}}">女</view>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </picker>
+    <picker mode="date" bindchange="bindDateChange" value='2017-01-01' class='info-row'>
+        <text>生日</text>
+        <view class='vtit' wx:if="{{brith == ''}}">未设置</view>
+        <view class='vtit' wx:else>{{brith}}</view>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </picker>
+    <navigator url='../editPlateNumber/editPlateNumber?licensePlate={{userInfo.licensePlate}}' class='info-row'>
+        <text>车牌</text>
+        <view class='vtit'>{{userInfo.licensePlate}}</view>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </navigator>
+    <navigator url='../commonAddress/commonAddress' class='info-row'>
+        <text>常用地址</text>
+        <view class='vtit'>{{userInfo.address1}}</view>
+        <image src='../images/arrow-right.png' class='ad'></image>
+    </navigator>
+</view> 

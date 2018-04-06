@@ -1,0 +1,27 @@
+<!--pages/orderInProgress/orderInProgress.wxml-->
+<view>
+    <view class='intop'>
+        <view class='tpart'>
+            <view class='txt'>当前金额</view>
+            <view class='vt'>￥<text>8.98</text></view>
+        </view>
+        <view class='tpart'>
+            <view class='txt'>已进行</view>
+            <view class='vt'><text>1</text>天<text>13</text>时<text>56</text>分</view>
+        </view>
+    </view>
+    <view class='setprice'>
+        <view class='srow'>价格设置<view class='st'>免费停车<text>20</text>分</view></view>
+        <view class='srow'><view class='st'>停车价格<text>20.00</text>元/时</view></view>
+        <view class='srow'><view class='st'>在此消费免费停车</view></view>
+    </view>
+    <view class='detcont'>
+        <view class='parkplace'>车锁ID<view class='tit'>8954654</view></view>
+        <view class='parkplace nav'>车位地址<view class='tit'>广东省广州市天河区五山街道中山大道西888号</view>
+          <image mode="widthFix" src="../images/navigation.png" class='icon'></image>
+        </view>  
+        <view class='parkplace'>归属单位<view class='tit'>乐天大厦</view></view>
+        <view class='parkplace'>联系电话<view class='tit'>13241576843</view></view> 
+         <view class='parkplace'>小牛客服<view class='tit'>020-8545216</view></view>      
+    </view>
+</view>

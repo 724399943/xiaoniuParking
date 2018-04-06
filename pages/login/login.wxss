@@ -1,0 +1,14 @@
+/* pages/login/login.wxss */
+page{background-color:#fff;}
+ 
+.in-main{width:93%;margin:auto;padding-top:20%;}
+.lin-box{background:#efefef;height:90rpx;line-height:90rpx;border-radius:6rpx;font-size:32rpx;margin-top:30rpx;}
+.lin-box::after{content:'';display:block;clear:both;}
+.lin-box .st{float:left;width:140rpx;text-align:center;}
+.lin-box .txt{float:left;display:block;height:90rpx;margin-left:5%;}
+.lin-nav{margin-top:30rpx;font-size:28rpx;padding:0 5%;}
+.lin-nav::after{content:"";display:block;clear:both;}
+.lin-nav .lf{float:left;}
+.lin-nav .rg{float:right;}
+.login-btn{margin-top:50rpx;font-size:32rpx;background-color:#cccccc;color:#ffffff;height:45px;line-height:45px;text-align:center;border-radius:3px;}
+.login-btn.on {background-color: #ff4f4f;}

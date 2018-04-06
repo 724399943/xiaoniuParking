@@ -1,0 +1,26 @@
+<!--pages/voucher/voucher.wxml-->
+<view class='main'>
+    <view class='vou-box'>
+         <image class="bg" src="../images/voucher-icon.png"></image> 
+        <!-- <image class='bg' src="../images/voucher-grey-icon.png"></image> -->
+        <!-- <image mode="widthFix" src='../images/overdue-ico.png' class="overdue"></image> -->
+        <view class='pass'>
+            <view class='plate'>{{detail.licensePlate}}</view>
+            <view>{{detail.address}}</view>
+        </view>
+        <view class='detail'>
+            <view class='top'>
+                <view>
+                    <view>收费</view>
+                    <view>￥<text class='tit'>{{detail.amout}}</text></view>
+                </view>
+                <view>
+                    <view>时长</view>
+                    <view><text class='tit'>{{detai.time}}<!-- 13</text>时<text class='tit'>56 --></text>分</view>
+                </view>
+            </view> 
+            <view class='time'>{{detai.startTime}} ~ {{detail.endTime}}</view>
+        </view>
+    </view>
+    <view class='tips'>请在15分钟内驶离停车场</view>
+</view> 

@@ -1,0 +1,21 @@
+<!--pages/customerServiceCenter/customerServiceCenter.wxml-->
+<view>
+    <view class='navlist'>
+        <navigator url='../openTheLock/openTheLock' class='navrow'>开不了锁
+          <image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image>
+        </navigator>
+        <navigator url='../findFault/findFault' class='navrow'>发现故障
+          <image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image>
+        </navigator>
+        <navigator url='../illegalReporting/illegalReporting' class='navrow'>举报违停
+          <image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image>
+        </navigator>
+        <navigator class='navrow'>其他问题
+          <image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image>
+        </navigator>
+        <view class='navrow'>客服电话
+          <image mode='widthFix' src="../images/arrow-right.png" class='arrow'></image>
+          <text class='num'>020-6835521</text>
+        </view>        
+    </view>
+</view>

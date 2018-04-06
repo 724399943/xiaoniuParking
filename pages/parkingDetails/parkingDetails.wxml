@@ -1,0 +1,30 @@
+<!--pages/parkingDetails/parkingDetails.wxml-->
+<view>
+    <view class='park'>
+        <view class='cartid'>车锁ID<text>123456786</text></view>
+        <view class='partDetail'>
+          <view class='detail'>
+              <view class='dpart'>
+                  <view class='dpt'><text>20</text>分</view>
+                  <view class='tit'>免费停车</view>
+              </view>
+              <view class='dpart'>
+                  <view class='dpt'>￥<text>99.5</text>/时</view>
+                  <view class='tit'>停车价格</view>
+              </view>
+              <!-- <view class='dpart'>
+                  <view class='dpt'>￥<text>20.0</text>/天</view>
+                  <view class='tit'>封顶价格</view>
+              </view> -->
+               <!-- <view class='dpart'>
+                  <view class='dpt'>￥<text>20.0</text>/时</view>
+                  <view class='tit'>超时</view>
+              </view>  -->
+          </view>
+          <view class='vt'>在此消费免费停车</view>
+        </view>
+    </view>
+    <view class='parkplace'>归属单位<text>乐天大厦</text></view>
+    <!-- <view class='parkplace'>共享时间<text>0:00-24:00</text></view> -->
+    <view class='openbtn'>开锁</view>
+</view> 

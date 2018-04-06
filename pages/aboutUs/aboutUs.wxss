@@ -1,0 +1,9 @@
+/* pages/aboutUs/aboutUs.wxss */
+.abtop{font-size:14px;text-align:center;padding:30px 0 20px;}
+.abtop .logo{width:40%;margin:auto;}
+.abtop .name{line-height:30px;}
+.msg{background-color:#fff;font-size:14px;}
+.msg .msg-row{height:45px;line-height:45px;padding:0 10px;overflow:hidden;border-bottom:1px solid #ddd;}
+.msg .msg-row .lf{float:left;}
+.msg .msg-row .rg{float:right;}
+.msg .msg-row .arrow{width:8px;margin-top:16px;}

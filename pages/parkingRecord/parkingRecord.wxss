@@ -1,0 +1,11 @@
+/* pages/parkingRecord/parkingRecord.wxss */
+.record-row{background-color:#fff;padding:0 10px;font-size:14px;overflow:hidden;margin-bottom:10px;}
+.record-row .num{color:#191d21;line-height:40px;border-bottom:1px solid #ddd;}
+.record-row .money{float:right;font-size:12px;}
+.record-row .money text{font-size:16px;color:#f05b48;font-weight:bold;}
+.record-row .msg{padding:10px 0;color:#808080;}
+.record-row .msg>view{line-height:25px;}
+.record-row .msg .address image{display:inline-block;width:16px;height:16px;vertical-align:middle;margin-right:5px;}
+.record-row .msg .time{font-size:12px;overflow:hidden;}
+.record-row .msg .time .lf{float:left;}
+.record-row .msg .time .rg{float:right;}

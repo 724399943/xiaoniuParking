@@ -1,0 +1,8 @@
+<!--pages/inputCoding/inputCoding.wxml-->
+<view class='iccont'>
+    <view class='inbox'>
+        <input placeholder='8-10数字'></input>
+    </view>
+    <view class='tips'>请确认输入正确的停车锁编号</view>
+    <view class='sbtn'>确认</view>
+</view>

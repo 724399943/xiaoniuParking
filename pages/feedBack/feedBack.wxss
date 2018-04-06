@@ -1,0 +1,7 @@
+/* pages/feedBack/feedBack.wxss */
+page{background-color:#fff;}
+.text{width:92%;margin:15px auto 0;background-color:#efefef;border-radius:3px;}
+.text textarea{font-size:16px;padding:3%;width:94%;}
+.commit{height:45px;line-height:45px;color:#fff;background-color:#f05b48;text-align:center;position:fixed;bottom:0;left:0;width:100%;font-size:16px;}
+.fsucess{position:fixed;top:20%;left:0;width:100%;font-size:16px;text-align:center;}
+.fsucess .ftit{line-height:25px;margin-top:10px;}

@@ -1,0 +1,13 @@
+/* pages/parkingDetails/parkingDetails.wxss */
+.park{background-color:#fff;margin:15px auto;padding:0 10px;font-size:16px;}
+.park .cartid{line-height:40px;border-bottom:1px solid #eee;overflow:hidden;}
+.park .cartid text{float:right;}
+.partDetail{padding:10px 0;}
+.park .detail{text-align:center;margin-bottom:10px;}
+.park .detail .dpart{display:inline-block;width:33.3%;font-size:12px;}
+.park .detail .dpart .dpt text{font-size:18px;color:#f05b48;font-weight:bold;}
+.park .detail .dpart .tit{color:#808080;}
+.partDetail .vt{text-align:center;font-size:14px;}
+.parkplace{background-color:#fff;height:40px;line-height:40px;font-size:16px;overflow:hidden;margin-top:10px;padding:0 10px;}
+.parkplace text{float:right;color:#808080;}
+.openbtn{height:40px;line-height:40px;background-color:#f05b48;color:#fff;font-size:16px;text-align:center;width:100%;position:fixed;bottom:0;left:0;}

@@ -1,0 +1,18 @@
+<!--pages/feedBack/feedBack.wxml-->
+ <view>
+    <view class='text'>
+        <textarea maxlength="-1" placeholder='告诉我们您的建议和反馈'></textarea>
+    </view> 
+    <view class='commit'>提交</view>
+</view>  
+<!-- <view>
+    <view class='fsucess'>
+      <view>
+          <icon type="success" size='70' color="#f05b48"></icon>
+      </view> 
+      <view class='ftit'>
+          <view>我们已经收到您的反馈</view>
+          <view>感谢您的支持!</view>
+      </view>
+    </view>
+</view>  -->

@@ -1,0 +1,7 @@
+/* pages/inputCoding/inputCoding.wxss */
+page{background-color:#fff;}
+.iccont{padding:0 15px;font-size:16px;}
+.iccont .inbox{background-color:#efefef;border-radius:3px;height:40px;line-height:40px;margin-top:15px;}
+.iccont .inbox input{height:40px;line-height:40px;text-align:center;color:#808080;padding:0 20px;}
+.iccont .tips{color:#808080;text-align:center;line-height:40px;font-size:14px;}
+.iccont .sbtn{height:40px;line-height:40px;background-color:#f05b48;color:#fff;text-align:center;border-radius:3px;margin-top:15px;}

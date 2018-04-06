@@ -1,0 +1,45 @@
+<!--pages/parkingDetail/parkingDetail.wxml-->
+<view class='detail-main'>
+    <view class='ptips'>超时：54分钟</view>
+    <view class='park'>
+        <view class='cartid'>车锁ID<text>123456786</text></view>
+        <view class='partDetail'>
+          <view class='detail'>
+              <view class='dpart'>
+                  <view class='dpt'><text>2</text>时</view>
+                  <view class='tit'>预约保留</view>
+              </view>
+              <view class='dpart'>
+                  <view class='dpt'><text>20</text>/分</view>
+                  <view class='tit'>免费停车</view>
+              </view>
+               <view class='dpart'>
+                  <view class='dpt'>￥<text>20.0</text>/时</view>
+                  <view class='tit'>停车价格</view>
+              </view> 
+                <!-- <view class='dpart'>
+                  <view class='dpt'>￥<text>20.0</text>/时</view>
+                  <view class='tit'>超时</view>
+              </view>   -->
+          </view>
+          <view class='vt'>在此消费免费停车</view>
+        </view>
+    </view>
+    <view class='detcont'>
+        <view class='parkplace'>归属单位<view class='tit'>乐天大厦</view></view>
+        <view class='parkplace'>联系电话<view class='tit'>13241576843</view></view> 
+        <view class='parkplace'>车位地址<view class='tit'>广东省广州市天河区五山街道中山大道西888号</view></view> 
+        <view class='picmain'>
+            <view class='title'>环境照片</view>
+            <view class='pcont'>
+                <image mode='widthFix' src="../images/logo.png" class='pic'></image>
+                <image mode='widthFix' src="../images/logo.png" class='pic'></image>
+                <image mode='widthFix' src="../images/logo.png" class='pic'></image>
+            </view>
+        </view>
+    </view>
+</view> 
+<view class='partbtn'>
+    <view class='bo'>取消预约(22时21分)</view>
+    <view>导航</view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="ad_popError" wx:if="{{popmsg}}">{{errorMsg}}</view> 
+<view class='in-main'>
+  <form bindsubmit="formSubmit">
+    <view class="lin-box">
+        <text class='st'>账号</text>
+        <input class='txt' type="number" name="phone" placeholder='手机号'></input>
+    </view>
+    <view class="lin-box">
+        <text class='st'>密码</text>
+        <input class='txt' type="password" name="password" placeholder='6-16位为字母，数字'></input>
+    </view>
+    <view class='lin-nav'>
+        <navigator class='lf' hover-class="none" url='../register/register'>立即注册</navigator>
+        <navigator class='rg' hover-class="none" url='../resetPassword/resetPassword'>忘记密码</navigator>
+    </view>
+    <button class='login-btn' form-type="submit">登录</button>
+  </form>
+</view>

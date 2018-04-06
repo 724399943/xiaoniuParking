@@ -1,0 +1,22 @@
+/* pages/withdraw/withdraw.wxss */
+.wmode{padding:0 10px;background-color:#fff;font-size:14px;}
+.wmode .title{font-size:25px;font-weight:500;padding-top:15px;}
+.wrow{height:40px;line-height:40px;padding:10px 0;border-bottom:1px solid #eee;position:relative;}
+.wrow .pic{width:33px;display:inline-block;vertical-align:middle;}
+.wrow .tit{display:inline-block;vertical-align:middle;margin-left:10px;}
+.wrow .sel{position:absolute;top:11px;right:0;}
+.wchange{padding:15px 10px;background-color:#fff;margin:10px 0;}
+.wchange .ali{height:40px;line-height:40px;border-radius:3px;background-color:#efefef;margin:10px 0;}
+.wchange .ali>input{height:40px;line-height:40px;padding:0 10px;font-size:14px;}
+.wchange .wec .add{width:60px;display:inline-block;vertical-align:middle;}
+.wchange .wec .tips{margin-left:4%;display:inline-block;vertical-align:middle;font-size:12px;color:#808080;line-height:20px;}
+.wmoney{background-color:#fff;padding:10px;}
+.wmoney .mcont{line-height:40px;position:relative;}
+.wmoney .mcont .title{font-size:25px;font-weight:500;}
+.wmoney .mcont .txt{font-size:14px;color:#f05b48;position:absolute;bottom:0;right:0;}
+.wmoney .mi{font-size:16px;}
+.wmoney .mi text{display:inline-block;vertical-align:middle;}
+.wmoney .mi input{display:inline-block;vertical-align:middle;margin-left:5px;height:45px;line-height:45px;}
+.sbtn{height:45px;line-height:45px;width:100%;color:#fff;font-size:16px;background-color:#f05b48;text-align:center;position:fixed;bottom:0;left:0;}
+.fsucess{position:fixed;top:20%;left:0;width:100%;font-size:16px;text-align:center;}
+.fsucess .ftit{line-height:25px;margin-top:10px;}

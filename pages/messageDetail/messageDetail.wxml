@@ -1,0 +1,8 @@
+<!--pages/messageDetail/messageDetail.wxml-->
+<view class='main'>
+    <view class='title'>消息标题</view>
+    <view class='time'>10:21</view>
+    <view class='content'>
+        消息内容图文形式消息内容图文形式消息内容图文形式消息内容图文形式消息内容图文形式消息内容图文形式消息内容图文形式消息内容图文形式
+    </view> 
+</view> 

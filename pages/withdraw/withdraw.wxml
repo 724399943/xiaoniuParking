@@ -1,0 +1,61 @@
+<!--pages/withdraw/withdraw.wxml-->
+<view>
+    <view class='wmode'>
+        <view class='title'>请选择提现账户</view>
+        <radio-group>
+          <view class='wrow'>
+              <view class='name'>
+                  <image mode='widthFix' src='../images/wechatPay.png' class='pic'></image>
+                  <text class='tit'>微信支付</text>
+              </view> 
+              <label class='sel'>
+                <radio color='#f05b48' name="pay"></radio>
+              </label>
+          </view>
+          <view class='wrow'>
+              <view class='name'>
+                  <image mode='widthFix' src='../images/alipay.png' class='pic'></image>
+                  <text class='tit'>支付宝支付</text>
+              </view> 
+              <label class='sel'>
+                <radio color='#f05b48' name="pay"></radio>
+              </label>
+          </view>
+        </radio-group>
+    </view>
+    <view class='wchange'>
+        <view class='wec'>
+            <image mode='widthFix' src='../images/add-pic.png' class='add'></image>
+            <view class='tips'>
+                <view>请添加微信收款码</view>
+                <view>微信-钱包-收付款-二维码收款-保存收款码</view>
+            </view> 
+        </view>
+        <!-- <view class='ali'>
+            <input placeholder='请输入支付宝账号'></input>
+        </view> -->
+    </view>
+    <view class='wmoney'>
+        <view class='mcont'>
+          <text class='title'>提现金额</text>
+          <text class='txt'>全部提现</text>
+        </view>
+        <view class='mi'>
+          <text>￥</text>
+          <input placeholder='可提现22.19'></input>
+        </view>
+    </view>
+    <view class='sbtn'>确定</view>
+</view>
+<!-- success -->
+ <!-- <view>
+    <view class='fsucess'>
+      <view>
+          <icon type="success" size='70' color="#f05b48"></icon>
+      </view> 
+      <view class='ftit'>
+          <view>提现申请已提交,</view>
+          <view>将在1-2个工作日内打入您的账户</view>
+      </view>
+    </view>
+</view>   -->

@@ -1,0 +1,23 @@
+/* pages/parkingDetail/parkingDetail.wxss */
+.detail-main{padding-bottom:55px;}
+.park{background-color:#fff;margin:15px auto;padding:0 10px;font-size:16px;}
+.park .cartid{line-height:40px;border-bottom:1px solid #eee;overflow:hidden;}
+.park .cartid text{float:right;}
+.partDetail{padding:10px 0;}
+.park .detail{text-align:center;margin-bottom:10px;}
+.park .detail.share .dpart{width:25%;}
+.park .detail .dpart{display:inline-block;width:33.3%;font-size:12px;}
+.park .detail .dpart .dpt text{font-size:18px;color:#f05b48;font-weight:bold;}
+.park .detail .dpart .tit{color:#808080;}
+.partDetail .vt{text-align:center;font-size:14px;}
+.detcont{margin-top:10px;}
+.ptips{line-height:40px;padding:0 10px;color:#fff;font-size:16px;background-color:#f05b48;}
+.parkplace{background-color:#fff;font-size:16px;overflow:hidden;padding:10px;border-bottom:1px solid #eee;}
+.parkplace .tit{float:right;color:#808080;font-size:14px;width:50%;text-align:right;}
+.picmain{background-color:#fff;padding:0 10px;font-size:16px;}
+.picmain .title{line-height:40px;}
+.picmain .pcont::after{content:"";display:block;clear:both;}
+.picmain .pcont .pic{width:30%;margin:0 2% 3% 1.33%;float:left;}
+.partbtn{height:45px;line-height:45px;background-color:#f05b48;color:#fff;position:fixed;bottom:0;left:0;width:100%;text-align:center;display:-webkit-box;font-size:14px;}
+.partbtn view{width:50%;}
+.partbtn .bo{border-right:1px solid #eee;margin-left:-1px;}

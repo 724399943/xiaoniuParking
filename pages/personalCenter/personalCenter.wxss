@@ -1,0 +1,15 @@
+/* pages/personalCenter/personalCenter.wxss */
+.content{padding-bottom:55px;}
+.centop{padding:20px 0;background-color:#f05b48;}
+.centop .headBox{width:90px;height:90px;border-radius:50%;margin:auto;background-color:#cc4d3d;position:relative;text-align:center;}
+/* .centop .headBox:before{content:"";display:block;padding:50% 0;} */
+.centop .headBox .pic{width:84px;height:84px;display:block;border-radius:50%;position:absolute;top:50%;left:50%;margin-top:-42px;margin-left:-42px;}
+.centop .nickname{color:#fff;text-align:center;line-height:30px;}
+.navcont{text-align:center;background-color:#fff;padding:15px 3%;font-size:15px;color:#44464c;}
+.navcont .part{display:inline-block;width:33.3%;}
+.navcont .part .name{display:inline-block;vertical-align:middle;margin-left:6%;}
+.navcont .ico{width:22px;display:inline-block;vertical-align:middle;}
+.navlist{margin-top:10px;background-color:#fff;font-size:14px;}
+.navlist .navrow{padding:0 10px;height:40px;line-height:40px;border-bottom:1px solid #eee;overflow:hidden;}
+.navlist .navrow .arrow{width:7px;float:right;margin-top:14px;}
+.outbtn{height:40px;line-height:40px;text-align:center;font-size:14px;background-color:#fff;width:100%;position:fixed;bottom:0;left:0;}

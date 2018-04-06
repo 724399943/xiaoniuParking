@@ -1,0 +1,13 @@
+/* pages/recharge/recharge.wxss */
+page{background-color:#fff;}
+.recont{padding:20px 10px 0;font-size:14px;}
+.recont .title{font-weight:bold;color:#001330;font-size:20px;padding:0 2%;}
+.choose .price .lf{float:left;}
+.choose{margin-top:10px;}
+.choose .price{overflow:hidden;}
+.choose .price .num{height:40px;line-height:40px;text-align:center;background-color:#efefef;width:46%;margin:0 2% 10px;border-radius:3px;color:#191d21;}
+.choose .price .num.on{color:#fff;background-color:#f05b48;}
+.choose .oinput{height:40px;line-height:40px;border-radius:3px;background-color:#efefef;width:96%;margin:auto;}
+.choose .oinput>input{line-height:40px;height:40px;padding:0 10px;}
+.topay{width:100%;height:45px;line-height:45px;position:fixed;bottom:0;left:0;color:#fff;background-color:#f05b48;text-align:center;}
+.sucess{text-align:center;position:fixed;top:20%;left:0;width:100%;font-size:14px;}

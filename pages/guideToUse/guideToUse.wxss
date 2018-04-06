@@ -1,0 +1,3 @@
+/* pages/guideToUse/guideToUse.wxss */
+page{background-color:#fff;}
+.cont{width:94%;margin:auto;font-size:16px;}
