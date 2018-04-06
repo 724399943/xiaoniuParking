@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/agreement/agreement",
+    "pages/resetPassword/resetPassword",
+    "pages/userInfo/userInfo",
+    "pages/editNickname/editNickname",
+    "pages/editPlateNumber/editPlateNumber",
+    "pages/commonAddress/commonAddress",
+    "pages/parkingRecord/parkingRecord",
+    "pages/voucher/voucher",
+    "pages/editPassword/editPassword",
+    "pages/guideToUse/guideToUse",
+    "pages/feedBack/feedBack",
+    "pages/aboutUs/aboutUs",
+    "pages/messageCenter/messageCenter",
+    "pages/messageDetail/messageDetail",
+    "pages/recharge/recharge",
+    "pages/withdraw/withdraw",
+    "pages/specifi/specifi",
+    "pages/myWallet/myWallet",
+    "pages/personalCenter/personalCenter",
+    "pages/inputCoding/inputCoding",
+    "pages/parkingDetails/parkingDetails",
+    "pages/search/search",
+    "pages/parkingDetail/parkingDetail",
+    "pages/orderEnd/orderEnd",
+    "pages/orderInProgress/orderInProgress",
+    "pages/customerServiceCenter/customerServiceCenter",
+    "pages/illegalReporting/illegalReporting",
+    "pages/openTheLock/openTheLock",
+    "pages/findFault/findFault"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#191d21",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  }
+}
